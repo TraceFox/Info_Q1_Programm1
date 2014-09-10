@@ -1,9 +1,7 @@
-java-kreise
+﻿java-kreise
 ===========
 
-Kleines Projekt in Java, entstanden als *Lehrstunde* für einen guten Freund.
-
-Dieser Branch `fabio` ist für das "Ferntutorium" gedacht.
+Unser 1. Infoprojekt für die Q1
 
 Hilfe
 ------
@@ -21,4 +19,4 @@ Hilfe
 Branches
 --------
 
-Gemeinsame Entwicklung findet sich im Branch `master`, die Produkte meiner Langeweile im Branch `dev`
+Das Finale Programm befindet sich im Branch 'master'. Für Spielereien gibt es 'fabio' und 'Jens'
