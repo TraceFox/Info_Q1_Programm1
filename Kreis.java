@@ -37,7 +37,7 @@ public class Kreis extends Zeichenobjekt
         if(r > 0) {
             this.radius = r;
         } else {
-            System.err.println(String.format("Radius darf nicht <= 0 sein. '%1$,.2f' gegeben", r));
+            System.err.println(String.format("Radius darf nicht <= 0 sein. '%1$,.2f' gegeben", r));  // Fehlermeldung in der konsole
         }
     }
     
@@ -45,7 +45,7 @@ public class Kreis extends Zeichenobjekt
         return this.radius;
     }
 
-    @Override
+    @Override  // Override überschreibt die abstrakte Methode im Zeichenobjekt
     public boolean getroffen(Punkt p)
     {
         return this.mittelpunkt.distanceTo(p) <= radius;
@@ -63,9 +63,9 @@ public class Kreis extends Zeichenobjekt
         this.setRadius(this.getRadius() + aenderung);
     }
     
-    @Override
+    @Override  //öffnet das Optionsmenü
     public void optionsMenue() {
-        JTextField radius = new JTextField(String.valueOf(this.radius));
+        JTextField radius = new JTextField(String.valueOf(this.radius));  // 
         JTextField x = new JTextField(String.valueOf(this.getMittelpunkt().getX()));
         JTextField y = new JTextField(String.valueOf(this.getMittelpunkt().getY()));
         JColorChooser j = new JColorChooser(this.farbe);
